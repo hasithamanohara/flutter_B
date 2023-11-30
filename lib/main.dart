@@ -9,9 +9,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Flutter Demo',
-      home: Scaffold(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("First"),
+          backgroundColor: const Color.fromARGB(255, 199, 179, 177),
+        ),
+        body: const Center(
+          child: Icon(
+            Icons.home,
+            color: Colors.blue,
+            size: 60,
+          ),
+        ),
+      ),
     );
   }
 }

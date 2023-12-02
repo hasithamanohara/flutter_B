@@ -14,14 +14,13 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text("First"),
-          backgroundColor: const Color.fromARGB(255, 199, 179, 177),
+          backgroundColor: Color.fromARGB(255, 17, 182, 211),
         ),
-        body: const Center(
-          child: Icon(
-            Icons.home,
-            color: Colors.blue,
-            size: 60,
-          ),
+        body: Container(
+          padding: const EdgeInsets.all(20),
+          height: 100,
+          width: 150,
+          color: const Color.fromARGB(255, 244, 54, 222),
         ),
       ),
     );

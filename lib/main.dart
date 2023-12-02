@@ -12,15 +12,35 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
+        backgroundColor: Colors.black26,
         appBar: AppBar(
           title: const Text("First"),
-          backgroundColor: Color.fromARGB(255, 17, 182, 211),
+          backgroundColor: const Color.fromARGB(255, 17, 182, 211),
         ),
-        body: Container(
-          padding: const EdgeInsets.all(20),
-          height: 100,
-          width: 150,
-          color: const Color.fromARGB(255, 244, 54, 222),
+        body: Center(
+          child: Column(
+            children: [
+              const SizedBox(
+                height: 15,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 40.0),
+                child: Image.asset(
+                  "assets/space1.png",
+                  height: 250,
+                  width: 250,
+                ),
+              ),
+              const SizedBox(
+                height: 1,
+              ),
+              Image.asset(
+                "assets/space2.png",
+                height: 250,
+                width: 250,
+              ),
+            ],
+          ),
         ),
       ),
     );
